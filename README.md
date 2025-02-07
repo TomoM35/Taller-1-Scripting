@@ -18,6 +18,7 @@ Un ciclo infinito es un bucle que nunca termina porque la condición de salida n
 <em> # Firmas </em>
 
 
+![image](https://github.com/user-attachments/assets/fe0024a3-41e6-4572-9d8e-24879c93959c)
 
 
  -void Saludar()
