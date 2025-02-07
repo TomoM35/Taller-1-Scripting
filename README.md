@@ -1,5 +1,26 @@
 # Taller-1-Scripting
 
+
+
+///////Preguntas del Taller////////
+
+
+¿Qué es un error en tiempo de ejecución?
+Es un error que ocurre mientras el programa se está ejecutando, provocando que se detenga inesperadamente o genere resultados incorrectos. Ocurre cuando el código intenta realizar una operación inválida, como dividir por cero.
+
+
+
+¿Qué es un ciclo infinito? 
+Un ciclo infinito es un bucle que nunca termina porque la condición de salida nunca se cumple.
+
+
+
+
+
+
+
+
+
  -void Saludar()
  {
        Console.WriteLine("¡Hola!");
