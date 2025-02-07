@@ -2,12 +2,12 @@
 
 <em> # Preguntas del Taller</em>
 
-
+![image](https://github.com/user-attachments/assets/bc6b73a0-0b29-4bbe-a478-d586bcfcb1d4)
 
 ¿Qué es un error en tiempo de ejecución?
 Es un error que ocurre mientras el programa se está ejecutando, provocando que se detenga inesperadamente o genere resultados incorrectos. Ocurre cuando el código intenta realizar una operación inválida, como dividir por cero.
 
-
+![image](https://github.com/user-attachments/assets/2ca4c03d-0893-4966-a053-637ddc77d4bf)
 
 ¿Qué es un ciclo infinito? 
 Un ciclo infinito es un bucle que nunca termina porque la condición de salida nunca se cumple.
