@@ -1,8 +1,7 @@
 # Taller-1-Scripting
 
+<em> # Preguntas del Taller</em>
 
-
-///////Preguntas del Taller////////
 
 
 ¿Qué es un error en tiempo de ejecución?
