@@ -4,25 +4,43 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Introduce una frase de al menos tres palabras:");
-        string frase = Console.ReadLine();
+        Console.WriteLine("Ingrese un número de máximo 8 cifras:");
+        string input = Console.ReadLine();
 
-        string[] palabras = frase.Split(' ');
-
-        if (palabras.Length < 3)
+        if (input.Length > 8 || !long.TryParse(input, out _))
         {
-            Console.WriteLine("La frase debe tener al menos tres palabras.");
+            Console.WriteLine("El número debe tener máximo 8 cifras.");
             return;
         }
 
-        for (int i = 0; i < palabras.Length; i++)
+        int result = SumDigitsUntilSingleDigit(input);
+        Console.WriteLine($"El valor de un solo dígito es: {result}");
+    }
+
+    static int SumDigitsUntilSingleDigit(string number)
+    {
+        int sum = 0;
+
+        foreach (char digit in number)
         {
-            palabras[i] = char.ToUpper(palabras[i][0]) + palabras[i].Substring(1).ToLower();
+            sum += digit - '0';
         }
 
-        string fraseFinal = string.Join(" ", palabras);
+        while (sum >= 10)
+        {
+            sum = SumDigits(sum.ToString());
+        }
 
-        Console.WriteLine("Resultado:");
-        Console.WriteLine(fraseFinal);
+        return sum;
+    }
+
+    static int SumDigits(string number)
+    {
+        int sum = 0;
+        foreach (char digit in number)
+        {
+            sum += digit - '0';
+        }
+        return sum;
     }
 }
